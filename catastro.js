@@ -7,17 +7,35 @@ function updatemenu() {
     }
   }
 
-  function resetFormContacto() {
-    // Resetear el formulario de contacto
-    document.forms['contacto'].reset();
-    // Mostrar un mensaje de agradecimiento
-    //alert('Gracias. En breve nos pondremos en contacto contigo');
+// Función para manejar el submit de ambos formularios
+function handleSubmit(event) {
+  event.preventDefault(); // Prevenir el comportamiento por defecto
+
+  var form = event.target; // Obtener el formulario que disparó el evento
+  var formData = new FormData(form); // Recoger los datos del formulario
+
+  // Enviar el formulario usando fetch
+  fetch(form.action, {
+      method: 'POST',
+      body: formData
+  })
+  .then(response => {
+      if (response.ok) {
+          form.reset(); // Resetear el formulario después de que se haya enviado correctamente
+          alert('Formulario enviado correctamente');
+      } else {
+          alert('Hubo un error al enviar el formulario');
+      }
+  })
+  .catch(error => {
+      console.error('Error al enviar el formulario:', error);
+      alert('Hubo un error al enviar el formulario');
+  });
 }
 
-function resetFormSugerencias() {
-    // Resetear el formulario de sugerencias
-    document.forms['sugerencias'].reset();
-    // Mostrar un mensaje de agradecimiento
-    //alert('Gracias por tus sugerencias. Las revisaremos pronto.');
-}
+// Añadir el manejador de eventos a ambos formularios
+document.querySelector('form[name="sugerencias"]').addEventListener('submit', handleSubmit);
+document.querySelector('form[name="contacto"]').addEventListener('submit', handleSubmit);
+
+
   
