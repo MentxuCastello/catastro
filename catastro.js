@@ -23,7 +23,8 @@ function handleSubmit(event) {
       if (response.ok) {
           form.reset(); // Resetear el formulario después de que se haya enviado correctamente
           alert('Formulario enviado correctamente');
-          window.location.reload(); // Recargar la página para limpiar los datos
+          location.replace(window.location.href); // Recargar la página completamente
+          
       } else {
           alert('Hubo un error al enviar el formulario');
       }
