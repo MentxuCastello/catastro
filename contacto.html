@@ -68,21 +68,21 @@
 
     <div style="margin: 100px;">
       <section style="margin-bottom: 30px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
-        <form name="contacto" method="POST" data-netlify="true" onsubmit="alert('Gracias. En breve nos pondremos en contacto contigo');">
+        <form name="contacto" action="https://formspree.io/f/mrbbwdyy" method="POST" data-netlify="true" onsubmit="alert('Gracias. En breve nos pondremos en contacto contigo');">
           <div class="row" style="margin-left: 100px; margin-right: 100px;">
             <h2 id="contacto_asociarse" style="color:#fd7e14;">Formulario de Alta como Socio</h2>
             <h3>Datos personales</h3>
             <div class="col" style="margin-top: 10px;">
               <label for="inputNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+              <input type="text" name="Nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputApellidos" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+              <input type="text" name="Apellidos" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputTiulacion" class="form-label">Titulación</label>
-              <input type="text" class="form-control" placeholder="Titulación" aria-label="Titulacion">
+              <input type="text" name="Titulacion" class="form-control" placeholder="Titulación" aria-label="Titulacion">
             </div>
           </div>
           
@@ -90,15 +90,15 @@
             <h3>Datos administrativos</h3>
             <div class="col" style="margin-top: 10px;">
               <label for="inputAnyoCuerpoSuperior" class="form-label">Año Incorporación Cuerpo Superior</label>
-              <input type="text" class="form-control" placeholder="Año " aria-label="Anyo Incorporación Cuerpo Superior">
+              <input type="text" name="Año Incorporacion Cuerpo" class="form-control" placeholder="Año " aria-label="Anyo Incorporación Cuerpo Superior">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputAnyoAdministracion" class="form-label">Año Incorporación en la Administración</label>
-              <input type="text" class="form-control" placeholder="Año" aria-label="Anyo Incorporacion Administracion">
+              <input type="text" name="Año Incorporacion Administracion" class="form-control" placeholder="Año" aria-label="Anyo Incorporacion Administracion">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputCuerpoOEscalaAnterior" class="form-label">En su caso cuerpo o escala anterior</label>
-              <input type="text" class="form-control" placeholder="Cuerpo o escala" aria-label="Cuerpo o escala anterior">
+              <input type="text" name="Cuerpo o escala" class="form-control" placeholder="Cuerpo o escala" aria-label="Cuerpo o escala anterior">
             </div>
           </div>
   
@@ -106,21 +106,21 @@
             <h3>Datos del centro de trabajo actual</h3>
             <div class="col" style="margin-top: 10px;">
               <label for="inputDependencia" class="form-label">Dependencia</label>
-              <input type="text" class="form-control" placeholder="Dependencia" aria-label="Dependencia">
+              <input type="text" name="Dependencia" class="form-control" placeholder="Dependencia" aria-label="Dependencia">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputDomicilio" class="form-label">Domicilio</label>
-              <input type="text" class="form-control" placeholder="Domicilio" aria-label="Domicilio">
+              <input type="text" name="Domicilio" class="form-control" placeholder="Domicilio" aria-label="Domicilio">
             </div>
           </div>
           <div class="row" style="margin-left: 100px; margin-right: 100px;">
             <div class="col" style="margin-top: 10px;">
               <label for="inputCiudad" class="form-label">Ciudad y código postal</label>
-              <input type="text" class="form-control" placeholder="Ciudad y código postal" aria-label="Ciudad y código postal">
+              <input type="text" name="Ciudad y código postal" class="form-control" placeholder="Ciudad y código postal" aria-label="Ciudad y código postal">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputTelefono" class="form-label">Teléfono dela dependencia (extensión)</label>
-              <input type="text" class="form-control" placeholder="Teléfono" aria-label="Telefono">
+              <input type="text" name="Telefono" class="form-control" placeholder="Teléfono" aria-label="Telefono">
             </div>
           </div>
   
@@ -128,21 +128,21 @@
             <h3>Datos del puesto actual</h3>
             <div class="col" style="margin-top: 10px;">
               <label for="inputDenomicacion" class="form-label">Denominación y nivel</label>
-              <input type="text" class="form-control" placeholder="Denominación y nivel" aria-label="Denominación y nivel">
+              <input type="text" name="Denominacion y nivel" class="form-control" placeholder="Denominación y nivel" aria-label="Denominación y nivel">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputAreaDestinoReal" class="form-label">Área del destino real (*)</label>
-              <input type="text" class="form-control" placeholder="Area del destino real" aria-label="Area del destino real">
+              <input type="text" name="Area del destino real" class="form-control" placeholder="Area del destino real" aria-label="Area del destino real">
             </div>
           </div>
           <div class="row" style="margin-left: 100px; margin-right: 100px;">
             <div class="col" style="margin-top: 10px;">
               <label for="inputTelefonoPersonal" class="form-label">Teléfono Personal</label>
-              <input type="text" class="form-control" placeholder="Teléfono personal" aria-label="Telefono personal">
+              <input type="text" name="Telefono personal" class="form-control" placeholder="Teléfono personal" aria-label="Telefono personal">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+              <input type="text" name="Email" class="form-control" placeholder="Email" aria-label="Email">
             </div>
             <div class="row" style="margin-top: 20px;">
               <div class="col-12">
@@ -163,26 +163,26 @@
             <h2 id="contacto_sugerencias" style="color:#fd7e14;">Formulario de Sugerencias</h2>
             <div class="col" style="margin-top: 10px;">
               <label for="inputNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+              <input type="text" name="Nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputApellidos" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+              <input type="text" name="Apellidos" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
             </div>
           </div>
           
           <div class="row" style="margin-left: 100px; margin-right: 100px;">
             <div class="col" style="margin-top: 10px;">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+              <input type="text" name="Email" class="form-control" placeholder="Email" aria-label="Email">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputTelefono" class="form-label">Teléfono</label>
-              <input type="text" class="form-control" placeholder="Tlf" aria-label="Telefono">
+              <input type="text" name="Telefono" class="form-control" placeholder="Tlf" aria-label="Telefono">
             </div>
             <div class="col" style="margin-top: 10px;">
               <label for="inputAsunto" class="form-label">Asunto</label>
-              <input type="text" class="form-control" placeholder="Asunto" aria-label="Asunto">
+              <input type="text" name="Asunto" class="form-control" placeholder="Asunto" aria-label="Asunto">
             </div>
             
           </div>
@@ -191,7 +191,7 @@
             <div class="col" style="margin-top: 10px;">
                 <label for="inputSugerencia" class="form-label">Sugerencia</label>
                 <!-- Cambiamos el input por un textarea y especificamos el número de columnas -->
-                <textarea class="form-control" rows="5" placeholder="Sugerencia" aria-label="Sugerencia"></textarea>
+                <textarea class="form-control" rows="5" name="Sugerencia" placeholder="Sugerencia" aria-label="Sugerencia"></textarea>
             </div>
             <div class="row" style="margin-top: 20px;">
               <div class="col-12">
