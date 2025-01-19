@@ -23,6 +23,7 @@ function handleSubmit(event) {
       if (response.ok) {
           form.reset(); // Resetear el formulario después de que se haya enviado correctamente
           alert('Formulario enviado correctamente');
+          window.location.reload(); // Recargar la página para limpiar los datos
       } else {
           alert('Hubo un error al enviar el formulario');
       }
@@ -32,10 +33,3 @@ function handleSubmit(event) {
       alert('Hubo un error al enviar el formulario');
   });
 }
-
-// Añadir el manejador de eventos a ambos formularios
-document.querySelector('form[name="sugerencias"]').addEventListener('submit', handleSubmit);
-document.querySelector('form[name="contacto"]').addEventListener('submit', handleSubmit);
-
-
-  
